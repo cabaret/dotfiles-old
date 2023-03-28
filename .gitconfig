@@ -1,0 +1,25 @@
+[init]
+	defaultBranch = master
+[core]
+	editor = nvim
+	excludesfile = /Users/jorisooms/.gitignore_global
+  pager = delta
+[user]
+	name = Joris Ooms
+	email = hello@cupofcode.be
+
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+    side-by-side = true
+    line-numbers = true
+    hunk-header-style = omit
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
