@@ -84,9 +84,10 @@ vim.cmd([[
 -- telescope
 local builtin = require('telescope.builtin')
 
-vim.keymap.set('n', '<c-p>', builtin.find_files, {})
-vim.keymap.set('n', '<leader>ff', builtin.live_grep, {})
+vim.keymap.set('n', '<c-p>', builtin.find_files, { desc = "Find files"})
+vim.keymap.set('n', '<c-f>', builtin.live_grep, { desc = "Find in files" })
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "Find buffer"})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 -- lazygit
 map('n', '<leader>gg', ':LazyGit<CR>', { desc = "Open lazygit" })
